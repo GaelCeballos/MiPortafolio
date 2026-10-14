@@ -1,0 +1,58 @@
+.typewriter {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -1.5px;
+}
+
+.typewriter__bright {
+  color: var(--color-text);
+}
+
+.typewriter__dim {
+  color: var(--color-text-dim);
+}
+
+.typewriter__cursor {
+  display: inline-block;
+  width: 4px;
+  height: 0.85em;
+  margin-left: 4px;
+  background: var(--color-accent);
+  vertical-align: text-bottom;
+  animation: cursor-blink 0.85s steps(1) infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .typewriter {
+    font-size: 48px;
+    line-height: 52px;
+  }
+}
+
+@media (max-width: 768px) {
+  .typewriter {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .typewriter {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+  }
+}
